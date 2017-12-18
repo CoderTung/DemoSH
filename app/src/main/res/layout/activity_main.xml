@@ -4,6 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="horizontal"
+              android:background="@drawable/main_bg"
               android:id="@+id/ad_container">
 
     <LinearLayout
@@ -16,7 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/main_bg_left"
             android:orientation="horizontal">
 
             <TextView
@@ -30,6 +30,7 @@
                 android:gravity="center_vertical"/>
 
             <TextView
+                android:id="@+id/tv_time"
                 android:layout_width="0dp"
                 android:layout_weight="2"
                 android:layout_height="match_parent"
@@ -51,7 +52,6 @@
             android:layout_width="match_parent"
             android:layout_weight="1"
             android:layout_height="0dp"
-            android:background="@drawable/main_bg_left"
             app:direction="left"
             app:isRepeat="true"
             app:speed="30"
@@ -70,30 +70,138 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="4"
             android:layout_height="0dp"
             android:text="天气"
             android:textColor="#fff"
             android:textSize="24sp"
             android:gravity="center"/>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_height="0dp"
-            android:text="限号"
-            android:textColor="#fff"
-            android:textSize="24sp"
-            android:gravity="center"/>
+            android:orientation="vertical"
+            android:layout_weight="1">
 
-        <TextView
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e3e6e8"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="今日限行    1 和 6"
+                android:textColor="#fafafd"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e3e6e8"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:layout_height="0dp"
-            android:text="油价"
-            android:textColor="#fff"
-            android:textSize="24sp"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:text="今日油价"
+                android:ems="1"
+                android:textColor="#fef95c"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   92 #"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   95 #"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   98 #"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  柴油"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天然气"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.77元"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.15元"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8.07元"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.39元"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="敬请期待"
+                    android:textColor="#fef95c"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
